@@ -3,6 +3,7 @@
     <span class="icon-wrapper" v-html="svg"></span>
     <slot name="numberOfAttendee"></slot>
     <slot name="attending"></slot>
+    <slot></slot>
   </div>
 </template>
 

@@ -5,15 +5,24 @@
       <h4 class="title">{{event.title}}</h4>
       <base-icon name="users">
         <span slot="numberOfAttendee"> {{event.attendees.length}} </span>
-        <span slot="attending">attending</span></base-icon>
+        <span slot="attending">attending</span>
+        <span>
+          <template>
+              <h2>Adam Jahr</h2>
+              <p>My words.</p>
+              <base-icon name="book"></base-icon>
+          </template>
+        </span>
+      </base-icon>
     </div>
   </router-link>
 </template>
 
 <script>
+import BaseIcon from "@/components/BaseIcon";
 export default {
   name: 'EventCard',
-
+  components: {BaseIcon},
   data(){
     return {
       event: {
