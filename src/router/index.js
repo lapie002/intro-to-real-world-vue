@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-//import HomeView from '../views/HomeView.vue'
-import EventList from '../views/EventList'
-import EventShow from '../views/EventShow'
-import EventCreate from '../views/EventCreate'
+import EventList from '@/views/EventList'
+import EventShow from '@/views/EventShow'
+import EventCreate from '@/views/EventCreate'
 
 Vue.use(VueRouter)
 
