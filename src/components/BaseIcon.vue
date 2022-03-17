@@ -1,7 +1,9 @@
 <template>
-  <div class="icon-wrapper" v-html="svg">
+  <div>
+    <span class="icon-wrapper" v-html="svg"></span>
+    <slot name="numberOfAttendee"></slot>
+    <slot name="attending"></slot>
   </div>
-
 </template>
 
 <script>
